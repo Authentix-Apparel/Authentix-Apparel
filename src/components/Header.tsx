@@ -13,6 +13,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import { WHATSAPP_NUMBER } from '../data/bangladeshData';
+import { BrandLogo } from './BrandLogo';
 
 export const Header: React.FC = () => {
   const {
@@ -96,18 +97,14 @@ export const Header: React.FC = () => {
 
       {/* Main Top Bar - Sleeker & Lighter on Mobile */}
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-18 flex items-center justify-between gap-3 lg:gap-8">
-        {/* Zone 1: Clean Modern Brand Wordmark */}
+        {/* Zone 1: Iconic Pink Brand Logo (#FF46A2) & Wordmark */}
         <div className="flex items-center gap-2 shrink min-w-0">
           <button
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-1.5 sm:gap-2 text-left cursor-pointer focus:outline-hidden min-w-0"
+            className="flex items-center text-left cursor-pointer focus:outline-hidden min-w-0 transition-opacity hover:opacity-90 active:scale-98"
+            aria-label="Authentix Apparel Home"
           >
-            <span className="text-lg sm:text-2xl font-bold tracking-tight text-stone-900 uppercase font-display">
-              AUTHENTIX
-            </span>
-            <span className="hidden sm:inline-block text-[11px] font-medium tracking-widest text-stone-400 uppercase pt-0.5">
-              Apparel
-            </span>
+            <BrandLogo variant="dark" size="md" />
           </button>
         </div>
 

@@ -18,6 +18,7 @@ import {
   Search,
   ExternalLink
 } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 export const CRMModal: React.FC = () => {
   const {
@@ -130,17 +131,16 @@ export const CRMModal: React.FC = () => {
         {/* CRM Top Header */}
         <div className="px-6 py-4 bg-stone-900 text-white flex items-center justify-between border-b border-stone-800">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-rose-600 flex items-center justify-center text-white font-bold font-serif text-xl">
-              A
-            </div>
+            <BrandLogo variant="light" size="sm" showSubtitle={false} />
+            <div className="h-6 w-px bg-stone-700 hidden sm:block" />
             <div>
               <div className="flex items-center gap-2">
-                <h2 className="text-base font-bold tracking-tight">Authentix Apparel — Merchant CRM</h2>
+                <h2 className="text-sm font-bold tracking-tight text-white">Merchant CRM Hub</h2>
                 <span className="text-[10px] bg-rose-900/80 text-rose-200 px-2 py-0.5 rounded font-mono uppercase">
                   Connected DB
                 </span>
               </div>
-              <p className="text-xs text-stone-400">Inventory Management & Courier Dispatch Center</p>
+              <p className="text-[11px] text-stone-400">Inventory Management & Courier Dispatch Center</p>
             </div>
           </div>
 

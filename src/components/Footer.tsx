@@ -1,6 +1,7 @@
 import React from 'react';
 import { useShop } from '../context/ShopContext';
 import { Phone, Mail, MapPin, Truck, ShieldCheck, RefreshCw, MessageSquare } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 export const Footer: React.FC = () => {
   const { setActivePage, setSelectedCategoryFilter } = useShop();
@@ -62,16 +63,15 @@ export const Footer: React.FC = () => {
 
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-        {/* Brand Column */}
+        {/* Brand Column with Iconic Pink Brand Logo */}
         <div className="lg:col-span-2 space-y-4">
-          <div className="flex items-center gap-2">
-            <span className="text-xl font-bold tracking-tight text-white uppercase font-display">
-              AUTHENTIX
-            </span>
-            <span className="text-[11px] font-medium tracking-widest text-stone-400 uppercase pt-0.5">
-              Apparel
-            </span>
-          </div>
+          <button
+            onClick={() => handleNav('home')}
+            className="cursor-pointer focus:outline-hidden text-left transition-opacity hover:opacity-90 active:scale-98"
+            aria-label="Authentix Apparel Home"
+          >
+            <BrandLogo variant="light" size="md" />
+          </button>
           <p className="text-xs text-stone-400 max-w-sm leading-relaxed">
             Contemporary women's fashion in Bangladesh. Three-piece sets, modern western dresses, and premium modal hijabs.
           </p>
