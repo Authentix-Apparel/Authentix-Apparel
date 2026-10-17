@@ -20,16 +20,16 @@ export const ContactPage: React.FC = () => {
 
   const faqs = [
     {
-      q: 'How does Cash on Delivery (ক্যাশ অন ডেলিভারি) work?',
-      a: 'You place your order online without paying any advance money. Our delivery partner (Pathao in Dhaka, Steadfast outside Dhaka) brings the parcel to your doorstep. You can check the exterior parcel, hand over the exact cash amount in BDT, and receive your receipt.'
+      q: 'How does doorstep payment work?',
+      a: 'You place your order online without paying any advance money. Our courier partner brings the parcel to your doorstep. You can inspect the exterior parcel, hand over the exact amount in BDT, and receive your receipt.'
     },
     {
       q: 'How long does delivery take inside and outside Dhaka?',
-      a: 'Deliveries inside Dhaka city are fulfilled within 24 to 48 hours (delivery fee ৳70). Deliveries to sub-Dhaka areas and all other 63 districts take 2 to 4 business days (delivery fee ৳130). Orders over ৳3,500 enjoy 100% Free Nationwide Delivery.'
+      a: 'Deliveries inside Dhaka city are fulfilled within 24 to 48 hours (delivery fee ৳70). Deliveries to sub-Dhaka areas and all other 63 districts take 2 to 4 business days (delivery fee ৳130). Orders over ৳3,500 enjoy 100% Free Delivery.'
     },
     {
       q: 'Can I exchange if the size does not fit?',
-      a: 'Yes, absolutely! We offer a 7-day hassle-free exchange policy. Simply message our WhatsApp hotline at 01711-889900 with your Order Number and desired replacement size. For Dhaka, our rider can swap the sizes right at your doorstep.'
+      a: 'Yes, absolutely! We offer a 7-day hassle-free exchange policy. Simply message our WhatsApp hotline at 01755-025128 with your Order Number and desired replacement size. For Dhaka, our rider can swap the sizes right at your doorstep.'
     },
     {
       q: 'Can I visit your showroom in Dhaka?',

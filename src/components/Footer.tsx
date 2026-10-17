@@ -23,8 +23,8 @@ export const Footer: React.FC = () => {
               <Truck className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-white">Cash on Delivery</h4>
-              <p className="text-xs text-stone-400 mt-0.5">Nationwide delivery in 64 districts. Pay after receiving parcel.</p>
+              <h4 className="text-sm font-semibold text-white">Doorstep Delivery</h4>
+              <p className="text-xs text-stone-400 mt-0.5">Delivery in 64 districts. Inspect parcel before payment.</p>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
             </span>
           </div>
           <p className="text-xs text-stone-400 max-w-sm leading-relaxed">
-            Contemporary women's fashion in Bangladesh. Three-piece sets, modern western dresses, and premium modal hijabs with nationwide Cash on Delivery.
+            Contemporary women's fashion in Bangladesh. Three-piece sets, modern western dresses, and premium modal hijabs.
           </p>
           <div className="text-xs text-stone-400 space-y-1 pt-1">
             <div className="flex items-center gap-2">
@@ -165,7 +165,7 @@ export const Footer: React.FC = () => {
                 onClick={() => handleNav('about')}
                 className="hover:text-rose-400 transition-colors cursor-pointer"
               >
-                Cash on Delivery Policy
+                Order & Delivery Policy
               </button>
             </li>
             <li>
@@ -223,7 +223,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-3 text-stone-400 text-[11px]">
             <span className="font-medium text-stone-300">Accepted Payments:</span>
             <span className="bg-stone-900 px-2 py-0.5 rounded text-rose-300 font-semibold border border-stone-800">
-              Cash on Delivery (COD)
+              Pay on Delivery
             </span>
             <span className="bg-stone-900 px-2 py-0.5 rounded text-pink-400 font-semibold border border-stone-800">
               bKash

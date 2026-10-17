@@ -265,14 +265,14 @@ export const CartPage: React.FC = () => {
               onClick={handleProceed}
               className="w-full py-3.5 px-6 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
             >
-              <span>Proceed to Cash on Delivery</span>
+              <span>Proceed to Checkout</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
 
           <div className="flex items-center justify-center gap-2 text-[11px] text-stone-500 pt-2 border-t border-stone-100">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
-            <span>Cash on Delivery with Parcel Check Guaranteed</span>
+            <span>Inspect parcel before receiving · 100% Guaranteed</span>
           </div>
         </div>
       </div>

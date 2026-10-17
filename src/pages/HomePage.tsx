@@ -103,9 +103,9 @@ export const HomePage: React.FC = () => {
 
               {/* Clean Inline Trust Markers */}
               <div className="pt-6 border-t border-stone-200 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-stone-500">
-                <span className="font-medium text-stone-800">Cash on Delivery</span>
+                <span className="font-medium text-stone-800">Fast Delivery</span>
                 <span aria-hidden="true">·</span>
-                <span>Nationwide Shipping</span>
+                <span>All 64 Districts</span>
                 <span aria-hidden="true">·</span>
                 <span>Authentic Fabrics</span>
               </div>
@@ -293,8 +293,8 @@ export const HomePage: React.FC = () => {
                   <span className="text-stone-500">Comfortable full-coverage</span>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-stone-200/80">
-                  <span className="font-semibold text-stone-900 block mb-0.5">Cash on Delivery</span>
-                  <span className="text-stone-500">Pay at doorstep</span>
+                  <span className="font-semibold text-stone-900 block mb-0.5">Doorstep Delivery</span>
+                  <span className="text-stone-500">Inspect before receiving</span>
                 </div>
               </div>
             </div>

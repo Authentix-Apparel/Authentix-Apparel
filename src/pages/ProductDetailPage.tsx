@@ -232,7 +232,7 @@ export const ProductDetailPage: React.FC = () => {
               )}
             </div>
             <p className="text-[11px] text-stone-500 mt-1">
-              Inclusive of all VAT. Cash on Delivery available across Bangladesh.
+              Inclusive of all VAT. Fast delivery available across Bangladesh.
             </p>
           </div>
 
@@ -324,7 +324,7 @@ export const ProductDetailPage: React.FC = () => {
               disabled={!product.inStock}
               className="w-full py-3.5 px-6 bg-rose-600 hover:bg-rose-700 text-white text-xs sm:text-sm font-bold uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer flex items-center justify-center gap-2 group disabled:bg-stone-300"
             >
-              <span>Order with Cash on Delivery</span>
+              <span>Order Now</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
 
@@ -338,7 +338,7 @@ export const ProductDetailPage: React.FC = () => {
             </button>
           </div>
 
-          {/* Delivery & Cash on Delivery Assurances */}
+          {/* Delivery & Customer Assurances */}
           <div className="border-t border-stone-200 pt-4 space-y-2.5 text-xs text-stone-600">
             <div className="flex items-start gap-2.5">
               <Truck className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
@@ -351,7 +351,7 @@ export const ProductDetailPage: React.FC = () => {
             <div className="flex items-start gap-2.5">
               <ShieldCheck className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
               <div>
-                <strong className="text-stone-900 block">Cash on Delivery with Parcel Check</strong>
+                <strong className="text-stone-900 block">Doorstep Delivery with Parcel Check</strong>
                 <span>Open parcel in front of the courier delivery executive before completing payment.</span>
               </div>
             </div>

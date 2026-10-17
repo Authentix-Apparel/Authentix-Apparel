@@ -276,7 +276,7 @@ export const QuickViewModal: React.FC = () => {
                     disabled={!product.inStock}
                     className="flex-1 py-3 px-4 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-xs transition-colors cursor-pointer flex items-center justify-center gap-2"
                   >
-                    <span>Cash on Delivery</span>
+                    <span>Order Now</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>

@@ -142,7 +142,7 @@ export const CheckoutPage: React.FC = () => {
           Shipping Address in Bangladesh
         </h1>
         <p className="text-xs text-stone-500 mt-1">
-          Fast nationwide delivery across all 64 districts · 100% Cash on Delivery
+          Fast delivery across all 64 districts in Bangladesh
         </p>
       </div>
 

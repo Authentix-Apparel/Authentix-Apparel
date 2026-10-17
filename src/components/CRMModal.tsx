@@ -140,7 +140,7 @@ export const CRMModal: React.FC = () => {
                   Connected DB
                 </span>
               </div>
-              <p className="text-xs text-stone-400">Inventory Management & Nationwide Courier Dispatch Center</p>
+              <p className="text-xs text-stone-400">Inventory Management & Courier Dispatch Center</p>
             </div>
           </div>
 

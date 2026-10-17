@@ -62,46 +62,47 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-2xs">
-      {/* Top Announcement Bar */}
-      <div className="bg-stone-900 text-stone-200 text-xs py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between text-[11px] font-normal tracking-wide">
-          <div className="flex items-center gap-2">
-            <span>Free delivery nationwide over ৳3,500</span>
-            <span className="opacity-30">·</span>
-            <span className="text-stone-300">Cash on Delivery</span>
+    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-2xs">
+      {/* Top Announcement Bar - Clean, Light & Single-Line */}
+      <div className="bg-[#FFF0F7] text-stone-700 text-xs py-1.5 px-3 sm:px-4 border-b border-[#FFE4F1]">
+        <div className="max-w-7xl mx-auto flex items-center justify-between text-[11px] font-normal tracking-wide gap-2 flex-nowrap">
+          {/* Left Text - Minimal, clean, no 'nationwide', no 'cash on delivery' */}
+          <div className="flex items-center gap-1.5 truncate min-w-0 shrink">
+            <span className="truncate text-stone-700 font-medium">Free delivery over ৳3,500</span>
           </div>
-          <div className="flex items-center gap-4 text-stone-400">
+
+          {/* Right Actions - Single-line guaranteed phone number (never wraps) */}
+          <div className="flex items-center gap-3 sm:gap-4 text-stone-600 shrink-0 whitespace-nowrap">
             <button
               onClick={() => handleNavClick('order-track')}
-              className="hover:text-white transition-colors flex items-center gap-1 cursor-pointer"
+              className="hidden sm:flex hover:text-stone-900 transition-colors items-center gap-1 cursor-pointer"
             >
-              <Truck className="w-3.5 h-3.5" />
+              <Truck className="w-3.5 h-3.5 text-stone-500" />
               <span>Track Order</span>
             </button>
-            <span className="text-stone-600">·</span>
+            <span className="hidden sm:inline text-stone-300">·</span>
             <a
               href={`https://wa.me/88${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-1 font-mono text-stone-300"
+              className="hover:text-rose-700 transition-colors inline-flex items-center gap-1 font-mono text-stone-800 whitespace-nowrap shrink-0 break-keep select-none font-semibold text-[11px]"
             >
-              <Phone className="w-3 h-3 text-rose-400" />
-              <span>{WHATSAPP_NUMBER}</span>
+              <Phone className="w-3 h-3 text-rose-600 shrink-0" />
+              <span className="whitespace-nowrap shrink-0 break-keep">01755&#8209;025128</span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* Main Top Bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-18 flex items-center justify-between gap-4 lg:gap-8">
+      {/* Main Top Bar - Sleeker & Lighter on Mobile */}
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-18 flex items-center justify-between gap-3 lg:gap-8">
         {/* Zone 1: Clean Modern Brand Wordmark */}
         <div className="flex items-center gap-2 shrink min-w-0">
           <button
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-2 text-left cursor-pointer focus:outline-hidden min-w-0"
+            className="flex items-center gap-1.5 sm:gap-2 text-left cursor-pointer focus:outline-hidden min-w-0"
           >
-            <span className="text-xl sm:text-2xl font-bold tracking-tight text-stone-900 uppercase font-display">
+            <span className="text-lg sm:text-2xl font-bold tracking-tight text-stone-900 uppercase font-display">
               AUTHENTIX
             </span>
             <span className="hidden sm:inline-block text-[11px] font-medium tracking-widest text-stone-400 uppercase pt-0.5">
@@ -312,7 +313,7 @@ export const Header: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-stone-900 line-clamp-1">30+ Exclusive Styles</h4>
-                      <p className="text-[11px] text-stone-500 mt-0.5">Cash on Delivery across Bangladesh</p>
+                      <p className="text-[11px] text-stone-500 mt-0.5">Fast delivery across Bangladesh</p>
                     </div>
                     <button
                       onClick={() => handleNavClick('store', 'All')}
@@ -540,8 +541,8 @@ export const Header: React.FC = () => {
               rel="noreferrer"
               className="w-full flex items-center justify-center gap-2 py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg shadow-xs transition-colors"
             >
-              <Phone className="w-4 h-4" />
-              <span>WhatsApp: {WHATSAPP_NUMBER}</span>
+              <Phone className="w-4 h-4 shrink-0" />
+              <span className="whitespace-nowrap break-keep">WhatsApp: 01755&#8209;025128</span>
             </a>
 
             <div className="flex items-center justify-between pt-1">

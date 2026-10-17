@@ -99,7 +99,7 @@ export const StorePage: React.FC = () => {
             {selectedCategoryFilter === 'All' ? 'Complete Collection' : selectedCategoryFilter}
           </h1>
           <p className="text-xs text-stone-500 mt-1">
-            Showing <strong className="text-stone-900 font-mono tabular-nums">{filteredProducts.length}</strong> of {products.length} products with Cash on Delivery
+            Showing <strong className="text-stone-900 font-mono tabular-nums">{filteredProducts.length}</strong> of {products.length} exclusive designs
           </p>
         </div>
 

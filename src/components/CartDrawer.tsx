@@ -78,7 +78,7 @@ export const CartDrawer: React.FC = () => {
             {remainingForFreeDelivery === 0 ? (
               <div className="text-emerald-800 font-medium flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                <span>Congratulations! You unlocked <strong>FREE Nationwide Delivery</strong>!</span>
+                <span>Congratulations! You unlocked <strong>FREE Delivery</strong>!</span>
               </div>
             ) : (
               <div className="space-y-1.5">
@@ -264,7 +264,7 @@ export const CartDrawer: React.FC = () => {
                   onClick={handleProceedCheckout}
                   className="w-full py-3 px-4 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-xs transition-colors flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <span>Proceed to Cash on Delivery</span>
+                  <span>Proceed to Checkout</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
 
@@ -278,7 +278,7 @@ export const CartDrawer: React.FC = () => {
 
               <div className="flex items-center justify-center gap-2 text-[11px] text-stone-500 pt-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                <span>100% Cash on Delivery across all 64 districts</span>
+                <span>Fast doorstep delivery across all 64 districts</span>
               </div>
             </div>
           )}

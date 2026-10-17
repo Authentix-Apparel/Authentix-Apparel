@@ -50,7 +50,7 @@ export const AboutPage: React.FC = () => {
               <div className="p-4 bg-stone-50 rounded-xl border border-stone-200 space-y-2">
                 <span className="font-bold text-stone-900 block text-xs">Our Commitment:</span>
                 <p className="text-xs text-stone-600">
-                  Fair living wages for 40+ female artisans, transparent fabric sourcing, and a 100% risk-free Cash on Delivery policy so every customer in Bangladesh shops with absolute peace of mind.
+                  Fair living wages for 40+ female artisans, transparent fabric sourcing, and a 100% risk-free inspection policy so every customer in Bangladesh shops with absolute peace of mind.
                 </p>
               </div>
             </div>
