@@ -62,24 +62,21 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-xs">
-      {/* Top Announcement Bar - No Dhaka word */}
-      <div className="bg-rose-950 text-rose-100 text-xs py-1.5 sm:py-2 px-3 sm:px-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-[10px] sm:text-xs tracking-wide">
-          <div className="flex items-center gap-1.5 text-center sm:text-left">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
-            <span>Free Delivery nationwide over ৳3,500</span>
-            <span className="hidden md:inline text-rose-400">|</span>
-            <span className="hidden md:inline font-medium text-rose-200">
-              100% Cash on Delivery (ক্যাশ অন ডেলিভারি)
-            </span>
+    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-2xs">
+      {/* Top Announcement Bar */}
+      <div className="bg-stone-900 text-stone-200 text-xs py-1.5 px-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between text-[11px] font-normal tracking-wide">
+          <div className="flex items-center gap-2">
+            <span>Free delivery nationwide over ৳3,500</span>
+            <span className="opacity-30">·</span>
+            <span className="text-stone-300">Cash on Delivery</span>
           </div>
-          <div className="flex items-center gap-3 sm:gap-4 text-stone-300 text-[10px] sm:text-xs">
+          <div className="flex items-center gap-4 text-stone-400">
             <button
               onClick={() => handleNavClick('order-track')}
               className="hover:text-white transition-colors flex items-center gap-1 cursor-pointer"
             >
-              <Truck className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+              <Truck className="w-3.5 h-3.5" />
               <span>Track Order</span>
             </button>
             <span className="text-stone-600">·</span>
@@ -87,34 +84,29 @@ export const Header: React.FC = () => {
               href={`https://wa.me/88${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-1 font-mono font-medium text-rose-300"
+              className="hover:text-white transition-colors flex items-center gap-1 font-mono text-stone-300"
             >
               <Phone className="w-3 h-3 text-rose-400" />
-              <span>WhatsApp: {WHATSAPP_NUMBER}</span>
+              <span>{WHATSAPP_NUMBER}</span>
             </a>
           </div>
         </div>
       </div>
 
       {/* Main Top Bar */}
-      <div className="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-1 sm:gap-4 lg:gap-8">
-        {/* Zone 1: Brand Wordmark (No Dhaka word) */}
-        <div className="flex items-center gap-1.5 sm:gap-3 shrink min-w-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-18 flex items-center justify-between gap-4 lg:gap-8">
+        {/* Zone 1: Clean Modern Brand Wordmark */}
+        <div className="flex items-center gap-2 shrink min-w-0">
           <button
             onClick={() => handleNavClick('home')}
-            className="group flex items-center gap-1.5 sm:gap-2.5 text-left cursor-pointer focus:outline-hidden min-w-0"
+            className="flex items-center gap-2 text-left cursor-pointer focus:outline-hidden min-w-0"
           >
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-rose-600 flex items-center justify-center text-white shadow-xs group-hover:bg-rose-700 transition-colors shrink-0">
-              <span className="font-serif text-lg sm:text-2xl font-bold tracking-tighter">A</span>
-            </div>
-            <div className="min-w-0">
-              <span className="block text-lg sm:text-2xl font-serif font-bold text-stone-900 tracking-tight leading-none truncate">
-                Authentix
-              </span>
-              <span className="block text-[8px] sm:text-[10px] tracking-[0.18em] sm:tracking-[0.22em] text-rose-600 font-semibold uppercase mt-0.5 truncate">
-                Apparel · Bangladesh
-              </span>
-            </div>
+            <span className="text-xl sm:text-2xl font-bold tracking-tight text-stone-900 uppercase font-display">
+              AUTHENTIX
+            </span>
+            <span className="hidden sm:inline-block text-[11px] font-medium tracking-widest text-stone-400 uppercase pt-0.5">
+              Apparel
+            </span>
           </button>
         </div>
 

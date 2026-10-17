@@ -64,17 +64,16 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* Brand Column */}
         <div className="lg:col-span-2 space-y-4">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-full bg-rose-600 flex items-center justify-center text-white font-serif font-bold text-xl">
-              A
-            </div>
-            <div>
-              <span className="font-serif text-xl font-bold text-white tracking-tight">Authentix Apparel</span>
-              <span className="block text-[9px] tracking-widest text-rose-400 uppercase font-semibold">Bangladesh</span>
-            </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xl font-bold tracking-tight text-white uppercase font-display">
+              AUTHENTIX
+            </span>
+            <span className="text-[11px] font-medium tracking-widest text-stone-400 uppercase pt-0.5">
+              Apparel
+            </span>
           </div>
           <p className="text-xs text-stone-400 max-w-sm leading-relaxed">
-            Elevating modern South Asian modesty and contemporary women's silhouettes. Discover designer three-pieces, graceful western maxi gowns, and luxury silk hijabs made with artisan care in Dhaka.
+            Contemporary women's fashion in Bangladesh. Three-piece sets, modern western dresses, and premium modal hijabs with nationwide Cash on Delivery.
           </p>
           <div className="text-xs text-stone-400 space-y-1 pt-1">
             <div className="flex items-center gap-2">

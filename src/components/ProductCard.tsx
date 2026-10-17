@@ -132,32 +132,24 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       {/* Content & Metadata Area */}
       <div className="p-4 flex flex-col flex-1 justify-between">
         <div>
-          {/* Unboxed Metadata with · separator */}
-          <div className="flex items-center gap-2 text-xs text-stone-500 mb-1">
-            <span className="font-semibold text-rose-700 uppercase tracking-wider text-[11px]">
+          {/* Clean minimal metadata with · separator */}
+          <div className="flex items-center gap-2 text-[11px] text-stone-500 mb-1">
+            <span className="font-medium text-stone-900 uppercase tracking-wider text-[10px]">
               {product.category}
             </span>
             <span aria-hidden="true" className="text-stone-300">·</span>
-            <span>{product.sizes.length} Sizes</span>
-            {product.banglaName && (
-              <>
-                <span aria-hidden="true" className="text-stone-300">·</span>
-                <span className="text-[11px] text-stone-400 font-normal truncate max-w-[90px]">
-                  {product.banglaName}
-                </span>
-              </>
-            )}
+            <span className="text-stone-500">{product.sizes.length} sizes</span>
           </div>
 
           {/* Product Title */}
-          <h3 className="text-sm font-semibold text-stone-900 group-hover:text-rose-600 transition-colors line-clamp-1">
+          <h3 className="text-sm font-medium text-stone-900 group-hover:text-rose-600 transition-colors line-clamp-1">
             {product.name}
           </h3>
 
           {/* Color Swatches */}
           {product.colors && product.colors.length > 0 && (
             <div 
-              className="flex items-center gap-1.5 mt-2.5"
+              className="flex items-center gap-1.5 mt-2"
               onClick={(e) => e.stopPropagation()}
             >
               {product.colors.map((color, idx) => (
@@ -167,9 +159,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                     setSelectedColorIndex(idx);
                     setImageHovered(false);
                   }}
-                  className={`w-3.5 h-3.5 rounded-full border transition-all cursor-pointer ${
+                  className={`w-3 h-3 rounded-full border transition-all cursor-pointer ${
                     selectedColorIndex === idx 
-                      ? 'ring-2 ring-rose-500 ring-offset-1 border-stone-300 scale-110' 
+                      ? 'ring-2 ring-stone-900 ring-offset-1 border-stone-400 scale-110' 
                       : 'border-stone-300 hover:scale-105'
                   }`}
                   style={{ backgroundColor: color.hex }}
@@ -177,7 +169,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                   aria-label={color.name}
                 />
               ))}
-              <span className="text-[11px] text-stone-500 ml-1">
+              <span className="text-[11px] text-stone-400 ml-1">
                 {activeColor.name}
               </span>
             </div>
@@ -185,9 +177,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </div>
 
         {/* Pricing Baseline with Tabular Figures */}
-        <div className="mt-3 pt-2.5 border-t border-stone-100 flex items-center justify-between">
+        <div className="mt-3 pt-2 border-t border-stone-100 flex items-center justify-between">
           <div className="flex items-baseline gap-2">
-            <span className="text-base font-bold text-stone-900 font-mono tabular-nums">
+            <span className="text-sm font-semibold text-stone-900 font-mono tabular-nums">
               {formatBDT(product.price)}
             </span>
             {product.originalPrice && product.originalPrice > product.price && (
@@ -197,8 +189,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             )}
           </div>
 
-          <span className={`text-[11px] font-medium ${product.inStock ? 'text-emerald-700' : 'text-stone-400'}`}>
-            {product.inStock ? 'In Stock (Fast Delivery)' : 'Pre-order'}
+          <span className={`text-[11px] ${product.inStock ? 'text-emerald-700 font-medium' : 'text-stone-400'}`}>
+            {product.inStock ? 'In Stock' : 'Pre-order'}
           </span>
         </div>
       </div>

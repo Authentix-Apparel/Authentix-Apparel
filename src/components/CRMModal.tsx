@@ -54,7 +54,7 @@ export const CRMModal: React.FC = () => {
     imageUrl: '/src/assets/images/hero_fashion_model_1792172507098.jpg',
     sizes: '38, 40, 42, 44',
     colorName: 'Rose Pink',
-    colorHex: '#e11d48'
+    colorHex: '#FF46A2'
   });
 
   if (!crmOpen) return null;
@@ -92,7 +92,7 @@ export const CRMModal: React.FC = () => {
       stockCount: Number(newProd.stockCount),
       images: [newProd.imageUrl || '/src/assets/images/hero_fashion_model_1792172507098.jpg'],
       colors: [
-        { name: newProd.colorName || 'Default', hex: newProd.colorHex || '#e11d48' }
+        { name: newProd.colorName || 'Default', hex: newProd.colorHex || '#FF46A2' }
       ],
       sizes: newProd.sizes.split(',').map((s) => s.trim()),
       fabric: newProd.fabric,

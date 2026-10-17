@@ -133,26 +133,20 @@ export const QuickViewModal: React.FC = () => {
             {/* Contiguous Purchase Module Right */}
             <div className="p-6 md:p-8 flex flex-col justify-between text-left">
               <div>
-                {/* Category & Status */}
+                {/* Category */}
                 <div className="flex items-center gap-2 text-xs text-stone-500 mb-1.5">
-                  <span className="font-semibold text-rose-700 uppercase tracking-wider">{product.category}</span>
+                  <span className="font-semibold text-stone-900 uppercase tracking-wider text-[11px]">{product.category}</span>
                   <span>·</span>
                   <span className="text-stone-400">SKU: {product.sku}</span>
-                  {product.banglaName && (
-                    <>
-                      <span>·</span>
-                      <span className="text-stone-500">{product.banglaName}</span>
-                    </>
-                  )}
                 </div>
 
                 {/* Title */}
-                <h2 className="text-xl md:text-2xl font-serif font-bold text-stone-900 leading-tight">
+                <h2 className="text-xl md:text-2xl font-bold text-stone-900 leading-tight">
                   {product.name}
                 </h2>
 
                 {/* Price */}
-                <div className="flex items-baseline gap-3 mt-3">
+                <div className="flex items-baseline gap-3 mt-2.5">
                   <span className="text-2xl font-bold text-stone-900 font-mono tabular-nums">
                     {formatBDT(product.price)}
                   </span>
@@ -169,12 +163,12 @@ export const QuickViewModal: React.FC = () => {
                 </div>
 
                 {/* Description */}
-                <p className="text-xs text-stone-600 mt-3 leading-relaxed">
+                <p className="text-xs text-stone-600 mt-2.5 leading-relaxed">
                   {product.description}
                 </p>
 
                 {/* Fabric Callout */}
-                <div className="mt-4 p-3 bg-stone-50 rounded-lg border border-stone-200/80 text-xs space-y-1">
+                <div className="mt-3.5 p-3 bg-stone-50 rounded-lg border border-stone-200/80 text-xs space-y-1">
                   <div className="text-stone-800">
                     <span className="font-semibold text-stone-900">Fabric:</span> {product.fabric}
                   </div>
@@ -186,10 +180,9 @@ export const QuickViewModal: React.FC = () => {
                 </div>
 
                 {/* Color Selector */}
-                <div className="mt-5">
+                <div className="mt-4">
                   <div className="flex items-center justify-between text-xs font-medium text-stone-700 mb-2">
-                    <span>Select Color: <strong className="text-stone-900">{activeColor.name}</strong></span>
-                    <span className="text-[11px] text-rose-600 font-medium">Image updates with color</span>
+                    <span>Shade: <strong className="text-stone-900">{activeColor.name}</strong></span>
                   </div>
                   <div className="flex items-center gap-2">
                     {product.colors.map((color, idx) => (
@@ -198,11 +191,11 @@ export const QuickViewModal: React.FC = () => {
                         onClick={() => handleColorChange(idx)}
                         className={`w-8 h-8 rounded-full border-2 transition-all cursor-pointer flex items-center justify-center relative ${
                           selectedColorIdx === idx
-                            ? 'ring-2 ring-rose-500 ring-offset-2 border-white scale-105'
+                            ? 'ring-2 ring-stone-900 ring-offset-2 border-white scale-105'
                             : 'border-stone-300 hover:scale-105'
                         }`}
                         style={{ backgroundColor: color.hex }}
-                        title={`${color.name} - View matching photo`}
+                        title={color.name}
                       >
                         {selectedColorIdx === idx && (
                           <Check className="w-3.5 h-3.5 text-white drop-shadow-md stroke-[3]" />
